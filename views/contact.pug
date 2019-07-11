@@ -1,0 +1,75 @@
+extends components/layout.pug
+
+block styles
+
+block content
+
+
+    section(style="margin-top:5vh")
+        .row
+            .col.s12.m4.center(data-aos="fadeInUp" data-aos-easing="linear" data-aos-duration="1500")
+                img(src='images/contact.png', alt='', style='width: 200;margin-top:80px')
+                h2.mont Get In Touch
+            
+                a.waves-effect.waves-light.btn.hoverable(href='tel:+919822540168')(style='background:#EFBF51;padding:15px;border-radius:30px')
+                    | CALL US
+
+            .col.s12.m8.center.margined-top-cozy(data-aos="zoom-in" data-aos-duration="1000")
+                .card-panel.z-depth-3.margined-bottom-comfortable.rounded
+                    .row
+                        form(action="#", method="post")
+                            .input-field.col.s12
+                                input#first_name.validate(type='text', name="first_name")
+                                label(for='first_name') Name
+
+                            .input-field.col.s6
+                                input#phone.validate(type='text', name="telephone")
+                                label(for='phone') Phone
+                            
+                            .input-field.col.s6
+                                input#email.validate(type='email', name="email")
+                                label(for='email') E-mail
+
+                            .input-field.col.s12
+                                textarea#textarea1.materialize-textarea(name="comments")
+                                label(for='textarea1') Message
+
+                        
+                            .center(style='margin:40px')
+                                button.btn.waves-effect.waves-light(type='submit', name='action',style='background:#EFBF51; width:200px')
+                                    | Submit
+                                    i.material-icons.right send
+
+    
+    
+    section
+        .row
+            .col.m3
+            .col.s12.m6.center.hide-on-small-only
+                h4.center.mont.black-text
+                iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14888.84348196274!2d79.09274824999999!3d21.104157599999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5bec8d5a59%3A0x2a6647c950f94b55!2sBhagwan+Nagar+Sub+Post+Office!5e0!3m2!1sen!2sin!4v1558531543630!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+                p.center.mont(style="color:#b2b2b2")    
+                    |   No 201, 2nd Floor, Smart Square Complex, 100 Feet Road, Indiranagar,
+                    br
+                    |   Bengaluru - 560038, Karnataka, India
+                    br
+                    |   Contact Grievance Officer: Akhila Mangevelli  
+                    br
+                    |   Contact: grievances@dunzo.in
+            
+            .col.s12.m6.center.hide-on-med-and-up
+                h4.center.mont.black-text
+                iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14888.84348196274!2d79.09274824999999!3d21.104157599999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf5bec8d5a59%3A0x2a6647c950f94b55!2sBhagwan+Nagar+Sub+Post+Office!5e0!3m2!1sen!2sin!4v1558531543630!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
+                p.center.mont(style="color:#b2b2b2")    
+                    |   No 201, 2nd Floor, Smart Square Complex, 100 Feet Road, Indiranagar,
+                    br
+                    |   Bengaluru - 560038, Karnataka, India
+                    br
+                    |   Contact Grievance Officer: Akhila Mangevelli  
+                    br
+                    |   Contact: grievances@dunzo.in
+            .col.m3
+            
+
+//- form(action="https://sahilkindarle212.000webhostapp.com/numerio.php", method="post")`
+block scripts

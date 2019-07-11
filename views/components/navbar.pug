@@ -1,0 +1,31 @@
+header
+
+    .navbar-fixed
+        .container
+            nav.mont.z-depth-0(style="background:#EFBF51")
+                .nav-wrapper
+                    a.black-text(data-target="slide-out" href="#").sidenav-trigger
+                        i.material-icons menu
+                    //- a.brand-logo(href='/')
+                        img(src='/images/logoheader.png', width='130',style='margin:20px')
+                        //- img.circle.responsive-img.hide-on-med-and-up(src='/images/logo.png', width='45',style='margin:20px')
+                    ul#nav-mobile.right.hide-on-med-and-down
+                        li(style="margin:0 30px 0 30px")
+                            a.waves-effect.waves-light.white-text.center(href='/',style='width:120px') Home
+                        li(style="margin:0 30px 0 30px")
+                            #scrollbutton.waves-effect.waves-light.white-text.center(style='width:120px;border: 2px solid white;border-radius:25px;padding:10px') Association
+                        li(style="margin:0 30px 0 30px")
+                            a.waves-effect.waves-light.white-text.center(href='/about',style='width:120px') About
+                        li(style="margin:0 30px 0 30px")
+                            a.waves-effect.waves-light.white-text.center(href='/contact',style='width:120px') Contact
+    
+    ul#slide-out.sidenav.mont
+        a.center(href="/")
+            img.center(src="/images/ord.png", alt="", style="margin-top:13vh")
+        li
+            a.waves-effect.waves-light.black-text.center(href='/') Home
+        li
+            a.waves-effect.waves-light.black-text.center(href='/about') About
+        li
+            a.waves-effect.waves-light.black-text.center(href='/contact') Contact
+

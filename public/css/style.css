@@ -1,0 +1,53 @@
+.rale {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.markazi {
+    font-family: 'Markazi Text', serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.abril {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.bold-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+[data-aos="upparwala"] nav {
+    background: transparent;
+    transition: background 0.4s linear;
+
+}
+
+[data-aos="upparwala"].aos-animate nav {
+    background: #21cce7; */
+
+/* } */
+
+.navbar-fixed {
+    position: absolute;
+    z-index: 999999999;
+}
+
+.waves-effect {
+    display: initial;
+}
+
+nav ul li a:hover {
+    background-color: transparent;
+    /* box-shadow: tomato */
+}

@@ -1,0 +1,97 @@
+extends components/layout.pug
+
+block styles
+
+block content
+    
+    
+    
+    .parallax-container(style='min-height:100vh')
+        .section
+            .row
+                .container
+                    //- img(src='images/homemain.png', alt='', style='width: 70%;margin-top:80px')
+                    .row
+                        h1.opensans.left.white-text(style="margin-top:27vh")(data-aos="fade-up" data-aos-duration="1500")
+                            |  Whatever You Want
+                            br
+                            |   Get Delivered
+        //- .center
+            a.center.waves-effect.waves-light.white-text.center(href='/',style='width:120px;border: 2px solid white;border-radius:25px;padding:10px;background:#EFBF51')(data-aos="fade-up" data-aos-duration="1500") Let's Get Started
+        .parallax
+            img.responsive-img(src='/images/bike.jpg', alt='') 
+
+    section 
+        .white
+            .row
+                .container
+                    h2.opensans.center(style="color:#EFBF51;padding:30px 30px 0px 30px ;margin-top:50px")(data-aos="fadeInUp" data-aos-duration="1500") How it Works
+            .container
+                p.center.mont(style="font-size:16px;color:#64777d;font-weight:400;margin-bottom:60px")(data-aos="fadeInDown")
+                    |   GAGS is a peer to peer map integrated delivery service app. Order whatever you need:
+                    br
+                    |    food,     home goods, personal items, groceries, and a nearby GAGS will fulfill your order . 
+                    br
+                    |   Track       your package in real time via the map.
+            
+            .row(style="padding:60px")
+                .col.s12.m4.center(data-aos="fadeInUp")( data-aos-easing="linear" data-aos-delay="300")
+                    img.z-depth-5.responsive-img.circle(src="/images/loc.png", alt="")
+                    p.center.opensans   
+                        |   Location
+                .col.s12.m4.center(data-aos="fadeInUp")( data-aos-easing="linear" data-aos-delay="600")
+                    img.z-depth-5.responsive-img.circle(src="/images/ord.png", alt="")
+                    p.center.opensans   
+                        |   Pickup
+                .col.s12.m4.center(data-aos="fadeInUp")( data-aos-easing="linear" data-aos-delay="900")
+                    img.z-depth-5.responsive-img.circle(src="/images/deli.png", alt="")
+                    p.center.opensans   
+                        |   Delivery
+            
+            p.center.mont(style="padding-bottom:50px;color:#64777d")(data-aos="fadeInDown" data-aos-easing="linear")
+                span.orange-text Ợ
+                |    Use the map to find a GAGS near you, or post a order and wait for the proposals of different GAGSs
+                br
+                span.orange-text Ợ
+                |    Coordinates the order with one GAGS
+                br
+                span.orange-text Ợ
+                |    Wait for delivery
+                
+    section#association
+        .row(style="background:#EFBF51;padding:90px 20px 90px 20px;margin:0px")
+            .container
+                h2.center.opensans.white-text(style="margin-bottom:40px")
+                    |   Association!!
+                .col.s12.m6.center
+                    .card.z-depth-5
+                        .card-image
+                            img(src='images/coffee.gif')
+                        .card-content
+                            .container
+                                p.center.opensans(style="font-size:17px")  
+                                    |   Get Your Parcel Delivered, Before the coffee gets cold
+                                br
+                                a.hoverable.waves-effect.waves-light.white-text.center.z-depth-1(style='border-radius:25px;padding:10px;background:#FF8400') Order a Delivery
+                            
+                .col.s12.m6.center
+                    .card.z-depth-5
+                        .card-image
+                            img(src='images/cycle.gif')
+                        .card-content
+                            p.center.opensans(style="font-size:17px")  
+                                |   Become a driver for someone's wishes 
+                                br
+                                |   Become a driver for someone's wishes 
+                            br
+                            a.hoverable.waves-effect.waves-light.white-text.center.z-depth-1(style='border-radius:25px;padding:10px;background:#FF8400') Become a Driver
+
+            
+
+    section.white(style="padding:20px")
+        .container
+            .row(style="background:#F1833B;margin:0px;border-radius:40px")
+                h3.center.abril.white-text(style="padding:30px")
+                    |   We  Deal In
+
+block scripts
