@@ -12,22 +12,26 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="{{ this.imagePath}}">
-                    <span class="card-title">Card Title</span>
+                    <img class="responsive-img" src="{{ this.imagePath}}" style="height: 300px">
+                    {{!-- <span class="card-title">Card Title</span> --}}
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <h4 class="strong truncate">
+                        {{this.title}}
+                    </h4>
+                    <p>{{ this.description}}</p>
                 </div>
                 <div class="card-action">
                     <div class="row">
                         <div class="left">
                             <div class="price">
-                                $12
+                                $ {{ this.price}}
                             </div>
                         </div>
                         <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+                            <a class="waves-effect waves-light btn"><i class="material-icons right">shopping_cart</i>Add
+                                to
+                                Cart</a>
                         </div>
                     </div>
                 </div>
