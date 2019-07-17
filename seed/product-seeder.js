@@ -1,7 +1,8 @@
 var Product = require("../models/product");
 var mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb://heroku_xhr4ljlx:p4jd3p9258485j74p6dse9mlg5@ds249267.mlab.com:49267/heroku_xhr4ljlx"
+   "mongodb://sahilk:sahilk123@ds235197.mlab.com:35197/purticart",
+  { useNewUrlParser: true }
 );
 var products = [
   new Product({

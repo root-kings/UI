@@ -1,12 +1,18 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
+
+{{#each products}}
 <div class="row">
     <div class="container">
+
+        {{#each this}}
+
+
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
+                    <img src="{{ this.imagePath}}">
                     <span class="card-title">Card Title</span>
                 </div>
                 <div class="card-content">
@@ -27,125 +33,9 @@
                 </div>
             </div>
         </div>
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <div class="row">
-                        <div class="left">
-                            <div class="price">
-                                $12
-                            </div>
-                        </div>
-                        <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <div class="row">
-                        <div class="left">
-                            <div class="price">
-                                $12
-                            </div>
-                        </div>
-                        <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <div class="row">
-                        <div class="left">
-                            <div class="price">
-                                $12
-                            </div>
-                        </div>
-                        <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <div class="row">
-                        <div class="left">
-                            <div class="price">
-                                $12
-                            </div>
-                        </div>
-                        <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/5/59/Clash_of_Clans_Logo.png">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <div class="row">
-                        <div class="left">
-                            <div class="price">
-                                $12
-                            </div>
-                        </div>
-                        <div class="right">
-                            <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{/each}}
+
     </div>
 </div>
+
+{{/each}}
